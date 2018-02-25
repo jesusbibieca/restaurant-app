@@ -9,17 +9,17 @@ def show_restaurants():
     return 'This page will show all my restaurants'
 
 
-@app.route('/restaurants/new')
+@app.route('/restaurant/new')
 def new_restaurants():
     return 'This page will be for making a new restaurant'
 
 
-@app.route('/restaurants/<int:restaurant_id>/edit')
+@app.route('/restaurant/<int:restaurant_id>/edit')
 def edit_restaurants(restaurant_id):
     return 'This page will be for editting restaurant number %s' % restaurant_id
 
 
-@app.route('/restaurants/<int:restaurant_id>/delete')
+@app.route('/restaurant/<int:restaurant_id>/delete')
 def delete_restaurants(restaurant_id):
     return 'This page will be for deleting restaurant number %s' % restaurant_id
 
