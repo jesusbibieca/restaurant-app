@@ -14,6 +14,11 @@ def new_restaurants():
     return 'This page will be for making a new restaurant'
 
 
+@app.route('/restaurants/<int:restaurant_id>/edit')
+def edit_restaurants(restaurant_id):
+    return 'This page will be for editting restaurant number %s' % restaurant_id
+
+
 if __name__ == '__main__':
     app.secret_key = 'Secret-key'
     app.debug = True
