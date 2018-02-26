@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Edit Restaurant</h1>
+<form method="post" action="#">
+	<p>Restaurant's name: </p>
+	<input type="text" name="edit_restaurant" size="30" placeholder="{{ restaurant.name }}">
+	<br>
+	<input type="submit" value="Save">	
+</form>
+
+{% endblock %}
