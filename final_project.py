@@ -24,6 +24,12 @@ def delete_restaurants(restaurant_id):
     return 'This page will be for deleting restaurant number %s' % restaurant_id
 
 
+@app.route('/restaurant/<int:restaurant_id>')
+@app.route('/restaurant/<int:restaurant_id>/menu')
+def show_menu(restaurant_id):
+    return 'This page is the men for restaurant number %s' % restaurant_id
+
+
 if __name__ == '__main__':
     app.secret_key = 'Secret-key'
     app.debug = True
