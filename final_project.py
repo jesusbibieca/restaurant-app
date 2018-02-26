@@ -32,12 +32,12 @@ def new_restaurants():
 
 @app.route('/restaurant/<int:restaurant_id>/edit')
 def edit_restaurants(restaurant_id):
-    return 'This page will be for editting restaurant number %s' % restaurant_id
+    return render_template('edit_restaurant.html', restaurant=restaurant)
 
 
 @app.route('/restaurant/<int:restaurant_id>/delete')
 def delete_restaurants(restaurant_id):
-    return 'This page will be for deleting restaurant number %s' % restaurant_id
+    return render_template('delete_restaurant.html', restaurant=restaurant)
 
 
 @app.route('/restaurant/<int:restaurant_id>')
