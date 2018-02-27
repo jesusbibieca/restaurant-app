@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>New Menu Item</h1>
+<form method="post" action="#">
+	<p>Item: </p>
+	<input type="text" name="new_item" size="30">
+	<p>Price:</p>
+	<input type="text" name="new_price" size="30">
+	<p>Description:</p>
+	<input type="text" name="new_description" size="30">
+	<br>
+	<input type="submit" value="Create">	
+</form>
+
+{% endblock %}
